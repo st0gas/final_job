@@ -21,6 +21,7 @@ body {
     color: white;
     padding-bottom: 10vh;
     background-image: url(pictures/back.png);
+    box-shadow: inset -20px 0px 100px #039be5;
     /* background-size: 130%;
     background-position: -20% 40%; */
     background-repeat: no-repeat;
