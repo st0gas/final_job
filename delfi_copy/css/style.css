@@ -1,0 +1,16 @@
+img {
+    width: 100%;
+}
+
+.topAdvert, .bigBlocks, .horizAd, .smallBlocks, .vertAd {
+  padding-top:15px;
+}
+
+.vertAdvert {
+    padding-left: 0px;
+}
+
+.mostRead {
+    padding-top: 30px;
+}
+
