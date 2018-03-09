@@ -179,7 +179,7 @@ and (min-width: 992px)
 
     .offers, .discover {
         position: relative;
-        top: -17vh;
+        top: -12vh;
     }
 
     .discover {
