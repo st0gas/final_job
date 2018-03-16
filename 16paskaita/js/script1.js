@@ -2,14 +2,11 @@ var shopDB = ["Milk", "Citrus","Hennesy"];
 var delButton;
 var liElement;
 
-
-
-
 function buttonDel() {                                                  //DELETE BUTTON OBJEKTO KURIMAS
 
         delButton = document.createElement("BUTTON");                   //Sukurian button objekta
         delButton.innerText = "Delete";                                 //Pridedam button teksta
-        delButton.setAttribute('onclick','delFunc()');                  //pridedam onclick atributa
+        // delButton.setAttribute('onclick','delFunc()');                  //pridedam onclick atributa
         delButton.className = "btn btn-danger btn-sm float-right";      //Pridedam bootstrap klasiu stylingui
 }
 
@@ -39,11 +36,14 @@ function loadArray () {
         document.getElementById("shoppingList").style.display = "inherit";  //Atvaizduojam UL border'i
         liElement.appendChild(delButton); 
         liElement.setAttribute("id",i);
-        delButton.className += (" "+(i));
+        // delButton.className += (" "+(i));
+        
     }
 }
 
 function delFunc () {
-    parentElement.remove(i);
-    console.log(parentElement);
+    // document.remove(i);
+    // console.log(parentElement);
+    alert(this.parentNode.id);
+    // elem.parentElement.removeChild(elem);
 }
