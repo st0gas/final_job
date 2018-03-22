@@ -36,3 +36,8 @@ p {
 input {
 	max-width: 100%;
 }
+
+ul {
+	list-style-type: none;
+	-webkit-padding-start: 0px!important;
+}

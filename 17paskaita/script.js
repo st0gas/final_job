@@ -7,6 +7,16 @@ if (dices == null){
 }
 console.log(dices);
 
+
+
+let line = "";
+for (i=0;i<dices.dice1.length;i++) {                                             //
+        
+        
+    line = line + "<li>"+dices.dice1[i]+" and "+(dices.dice2[i])+"</li>";      //Bandau ihardkodint eilute.....ismeta kad unexpected [
+}
+document.getElementById("list").innerHTML = line;
+
 function rollDice(){
     let line = "";
     let die1 = document.getElementById("die1");
@@ -38,13 +48,13 @@ function rollDice(){
     localStorage.setItem('bamba', JSON.stringify(dices));
     var arrLength = dices.dice1.length;
     console.log(arrLength); 
-    // for (i=0;i<dices.dice1.length;i++) {                                             //
-    //     
+    for (i=0;i<dices.dice1.length;i++) {                                             //
         
-        // line = line + "<li>"+dices.dice1.[i]+" and "+(dices.dice2.[i])+"</li>";      //Bandau ihardkodint eilute.....ismeta kad unexpected [
+        
+        line = line + "<li>"+dices.dice1[i]+" and "+(dices.dice2[i])+"</li>";      //Bandau ihardkodint eilute.....ismeta kad unexpected [
     }
-    // document.getElementById("list").innerHTML = line;
+    document.getElementById("list").innerHTML = line;
 
-
+}
 
 
