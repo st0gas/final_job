@@ -1,0 +1,38 @@
+
+.dice {
+	float:left;
+	width:55px;
+	font-size:24px;
+	text-align:center;
+	margin:5px;
+}
+
+img {
+	max-height: 55px;
+}
+
+.top {
+	margin-top: 100px;
+}
+
+.box {
+	background-color: #CCC;
+	border: solix 1px black;
+	border-radius: 5%;
+	padding: 10px;
+}
+
+p {
+	text-align: center;
+}
+
+.diceCont {
+	margin: 0 auto;
+	background-color: black;
+	min-width: 100%;
+}
+
+
+input {
+	max-width: 100%;
+}
