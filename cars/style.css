@@ -1,3 +1,11 @@
-.brandBtn {
+.brandBtn, .modelBtn {
+	min-width: 100%;
+}
+
+.row {
+	min-width: 100%;
+}
+
+.dropdown, .form-control {
 	min-width: 100%;
 }
