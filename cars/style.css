@@ -9,3 +9,8 @@
 .dropdown, .form-control {
 	min-width: 100%;
 }
+
+img {
+	max-width: 100%;
+}
+
