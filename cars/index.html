@@ -1,18 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <title>Masinu paieska</title>
     
-    <div class="container">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="style.css"/>
+	
+</head>
+
+<body>
+<main>
+	<div class="container">
 		<div class="row">
 			<div class="col-lg-6">
 				<div>
@@ -24,14 +32,61 @@
 				<div class="row">
 					<div class="form-group col-lg-6 col-md-6">
 					<label for="firstname">Brand :</label>
-					<input type="text" name="Brand" class="form-control" id="Brand" placeholder="Brand">
+					<!-- <input type="text" name="Brand" class="form-control" id="Brand" placeholder="Brand"> -->
+
+
+
+<!--  -->
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle brandBtn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Choose Brand
+  </button>
+  <div class="dropdown-menu brandItem" aria-labelledby="dropdownMenuButton">
+    <!-- <a class="dropdown-item" href="#">Action</a> -->
+  </div>
+</div>
+<!--  -->
+
+
+
+
+
+
+
+
+
+
 					
 					</div>
-					<div class="form-group col-lg-6 col-md-6">
+					<!-- <div class="form-group col-lg-6 col-md-6">
 					<label for="lastname">Model:</label>
 					<input type="text" name="Model" class="form-control" id="Model" placeholder="Model">
 					
-					</div>
+					</div> -->
+
+
+
+
+
+<div class="form-group col-lg-6 col-md-6">
+					<label for="firstname">Brand :</label>
+					<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle brandBtn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Choose Model
+  </button>
+  <div class="dropdown-menu modelItem" aria-labelledby="dropdownMenuButton">
+    <!-- <a class="dropdown-item" href="#">Action</a> -->
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
 				</div>
 				
 				<div class="row">
@@ -55,7 +110,7 @@
 					</div>
 					<div class="form-group col-lg-6 col-md-6">
 						<label for="date_to">Date to *:</label>
-						<input type="date" id="date_to" name="date_to" class="form-control " placeholder="mm/dd/yyyy" rel="Date to">
+						<input type="date" id="date_to"  name="date_to" class="form-control "  placeholder="mm/dd/yyyy" rel="Date to">
 					
 					</div>
 				</div>
@@ -85,11 +140,16 @@
 			</div>
 		</div>
 	</div>
+</main>
+    
+	<script>
+		$( ".click" ).click(function() {
+  console.log("TEST");
+});
+	</script>
+	<script src="CARS.js"></script>
+    <!-- <script src="js/Manifacturers.js"></script> -->
+    <script src="script.js"></script>
+</body>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
 </html>
